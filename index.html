@@ -28,14 +28,19 @@
 
     <script>
       
-      function firstProfile() {
-        document.getElementById("second").style.display = "none";
-        document.getElementById("first").style.display = "block";
-      }
+      function changeProfile() {
+        
+        var first = document.getElementById("second");
+        var second = document.getElementById("first");
 
-      function secondProfile() {
-        document.getElementById("first").style.display = "none";
-        document.getElementById("second").style.display = "block";
+        if(first.style.display == "none") {
+          second.style.display = "none";
+          first.style.display = "block";
+        }
+        else {
+          first.style.display = "none";
+          second.style.display = "block";
+        }
       }
     </script>
   </head>
@@ -47,8 +52,8 @@
         <div class="card">
           <img class="profile" src="images/image-tanya.jpg" alt="Tanya's profile" />
           <div class="navigation-icon">
-            <img src="images/icon-prev.svg" alt="previous" onclick="firstProfile">
-            <img src="images/icon-next.svg" alt="next" onclick="secondProfile()">
+            <img src="images/icon-prev.svg" alt="previous" onclick="changeProfile()">
+            <img src="images/icon-next.svg" alt="next" onclick="changeProfile()">
           </div>
         </div>
       </div>
@@ -74,8 +79,8 @@
         <div class="card">
           <img class="profile" src="images/image-john.jpg" alt="John's profile">
           <div class="navigation-icon">
-            <img src="images/icon-prev.svg" alt="previous" onclick="firstProfile()">
-            <img src="images/icon-next.svg" alt="next" onclick="secondProfile()">
+            <img src="images/icon-prev.svg" alt="previous" onclick="changeProfile()">
+            <img src="images/icon-next.svg" alt="next" onclick="changeProfile()">
           </div>
         </div>
       </div>
