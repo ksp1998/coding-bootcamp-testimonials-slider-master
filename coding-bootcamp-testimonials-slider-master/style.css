@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: 6%;
+}
+
+.card-holder {
+    min-height: 50vh;
+    background-image: url(images/pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.comma-image {
+    min-height: 8vh;
+    background-image: url(images/pattern-quotes.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description {
+    transform: translateY(-6vh);
+    text-align: center;
+}
+
+.curv-image {
+    position: fixed;
+    height: 10vh;
+    background-image: url(images/pattern-curve.svg);
+}
